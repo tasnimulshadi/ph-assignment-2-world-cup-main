@@ -1,0 +1,92 @@
+/* ----------------------
+        Media Query
+------------------------- */
+/* ----------------------
+        Small Devices
+------------------------- */
+@media screen and (max-width:576px) {}
+
+/* -------------------------
+        Medium Devices
+ --------------------------- */
+@media screen and (min-width:577px) and (max-width:768px) {}
+
+/* -------------------------
+        Large Devices
+---------------------------- */
+@media screen and (min-width:767px) and (max-width:992px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner {
+        height: 65vh;
+        gap: 8px;
+    }
+
+    .banner-text {
+        padding-left: 50px;
+    }
+
+    .banner-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 12px 20px;
+    }
+
+    main {
+        padding-top: 5vh;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .menu {
+        padding: 0;
+        background-color: #ffffff;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
+
+    .menu a {
+        padding: 15px;
+        border: 1px solid #E8E8E8;
+    }
+
+    .btn-view-all {
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        padding: 12px 30px;
+    }
+
+    footer hr {
+        margin: 30px 0;
+    }
+
+    .bottom-menu {
+        flex-wrap: wrap;
+    }
+
+    .bottom-menu a {
+        margin: 0 30px;
+    }
+}
