@@ -4,12 +4,184 @@
 /* ----------------------
         Small Devices
 ------------------------- */
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner {
+        height: 90vh;
+        gap: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .banner-text {
+        align-items: center;
+        width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .banner-text h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner-text p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 85%;
+    }
+
+
+    button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .banner-img {
+        width: 60%;
+    }
+
+    .banner-img img {
+        width: 100%;
+        margin: auto;
+    }
+
+    main {
+        padding-top: 0vh;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .menu {
+        padding: 0;
+        background-color: #ffffff;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        justify-items: center;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #161616;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px 50px;
+        border: 1px solid #E8E8E8;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .bottom-menu {
+        flex-wrap: wrap;
+    }
+
+    .bottom-menu a {
+        margin: 0 10px;
+    }
+}
 
 /* -------------------------
         Medium Devices
  --------------------------- */
-@media screen and (min-width:577px) and (max-width:768px) {}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding-top: 3vh;
+        padding-bottom: 6vh;
+    }
+
+    .banner {
+        height: 50vh;
+        gap: 0px;
+    }
+
+    .banner-text {
+        padding-left: 50px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .banner-text p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    main {
+        padding-top: 0vh;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .menu {
+        padding: 0;
+        background-color: #ffffff;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+
+    }
+
+    .menu a {
+        padding: 11px 0;
+        border: 1px solid #E8E8E8;
+        font-size: 15px;
+    }
+
+    .btn-view-all {
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        padding: 12px 30px;
+    }
+
+    footer hr {
+        margin: 25px 0;
+    }
+
+    .bottom-menu {
+        flex-wrap: wrap;
+    }
+
+}
 
 /* -------------------------
         Large Devices
@@ -88,5 +260,30 @@
 
     .bottom-menu a {
         margin: 0 30px;
+    }
+}
+
+
+/* -------------------------
+        Extra Devices
+---------------------------- */
+@media screen and (min-width:993px) and (max-width:1140px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner {
+        height: 90vh;
+        gap: 8px;
+    }
+
+    .banner-text {
+        padding-left: 50px;
+    }
+
+    .banner-text h1 {
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 10px;
     }
 }

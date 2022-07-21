@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -34,19 +34,21 @@ button i {
     margin-left: 8px;
 }
 
+
+
 /* -----------------------
         header styles 
 -------------------------- */
 header {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 .banner {
-    height: 90vh;
+    height: 86vh;
     display: flex;
     align-items: stretch;
-    gap: 50px;
+    gap: 20px;
     background-color: #161616;
     border-radius: 30px;
     color: white;
@@ -81,7 +83,7 @@ header {
 }
 
 .banner-img img {
-    width: 95%;
+    width: 100%;
 }
 
 
