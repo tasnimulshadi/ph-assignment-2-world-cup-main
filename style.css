@@ -134,6 +134,9 @@ section {
 
 .right-side {}
 
+/* -----------------------
+        blogs styles 
+-------------------------- */
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -188,6 +191,53 @@ section {
 .btn-view-all {
     display: none;
 }
+
+/* -----------------------
+        matches styles 
+-------------------------- */
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.match {
+    box-shadow: 0 0 10px #d5d5d5a1;
+    border-radius: 10px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match-flags {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.match-flags img {
+    width: 33%;
+}
+
+.match-flags h5 {}
+
+.match-details {
+    text-align: center;
+}
+
+.match-details h4 {
+    color: #161616;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.match-details p {
+    color: #4D4D4D;
+    font-size: 16px;
+}
+
 
 
 /* -----------------------
