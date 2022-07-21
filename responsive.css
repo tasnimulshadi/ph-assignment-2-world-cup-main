@@ -9,11 +9,15 @@
         width: 90%;
     }
 
+    header {
+        padding-top: 3vh;
+    }
+
     .banner {
         height: 90vh;
         gap: 0px;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding-top: 30px;
     }
@@ -305,5 +309,11 @@
         font-size: 45px;
         line-height: 45px;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:885px) and (max-width:992px) {
+    .banner-img img {
+        width: 90%;
     }
 }

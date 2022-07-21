@@ -28,10 +28,16 @@ button {
     background-color: #DD0000;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
 }
 
 button i {
     margin-left: 8px;
+}
+
+button:hover {
+    transform: scale(1.2);
 }
 
 
@@ -74,7 +80,61 @@ header {
     margin-bottom: 30px;
 }
 
-.banner-text button {}
+.banner-btn button {
+    z-index: 1;
+}
+
+@keyframes football-animation {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotate(1deg);
+    }
+
+    25% {
+        left: 0;
+        bottom: 90%;
+        transform: rotate(1000deg);
+    }
+
+    50% {
+        top: 90%;
+        left: 90%;
+        transform: rotate(1deg);
+    }
+
+    75% {
+        top: 0;
+        left: 90%;
+        transform: rotate(1000deg);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(1deg);
+    }
+}
+
+.football {
+    z-index: 2;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+
+.banner-btn:hover .football {
+    animation-name: football-animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    display: block;
+}
+
+
 
 .banner-img {
     width: 50%;
@@ -272,4 +332,28 @@ footer hr {
     font-size: 16px;
     line-height: 24px;
     margin: 0 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    background-color: #DD0000;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: white;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i {
+    font-size: 17px;
+
 }
