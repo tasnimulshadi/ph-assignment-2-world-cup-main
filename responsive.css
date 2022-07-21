@@ -112,6 +112,38 @@
     .bottom-menu a {
         margin: 0 10px;
     }
+
+    @keyframes football-animation {
+        0% {
+            top: 0;
+            left: 0;
+            transform: rotate(1deg);
+        }
+
+        25% {
+            left: 0;
+            bottom: 80%;
+            transform: rotate(1000deg);
+        }
+
+        50% {
+            top: 80%;
+            left: 80%;
+            transform: rotate(1deg);
+        }
+
+        75% {
+            top: 0;
+            left: 80%;
+            transform: rotate(1000deg);
+        }
+
+        100% {
+            top: 0;
+            left: 0;
+            transform: rotate(1deg);
+        }
+    }
 }
 
 /* -------------------------
