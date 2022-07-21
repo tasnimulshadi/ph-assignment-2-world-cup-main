@@ -86,9 +86,19 @@
         border: 1px solid #E8E8E8;
     }
 
-    .blogs {
+    .blogs,
+    .matches {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+
+    .match-details h4 {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+
+    .match-details p {
+        font-size: 15px;
     }
 
     .bottom-menu {
@@ -142,11 +152,6 @@
         padding-top: 0vh;
     }
 
-    .blogs {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
     section {
         flex-direction: column;
         row-gap: 25px;
@@ -163,6 +168,21 @@
     .menu a {
         padding: 11px 0;
         border: 1px solid #E8E8E8;
+        font-size: 15px;
+    }
+
+    .blogs,
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .match-details h4 {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+
+    .match-details p {
         font-size: 15px;
     }
 
